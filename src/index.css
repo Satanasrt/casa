@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-game-primary text-white;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-game-accent hover:bg-opacity-90 text-white font-semibold py-2 px-4 rounded-md transition-all duration-200;
+  }
+
+  .input-primary {
+    @apply bg-game-secondary border border-gray-700 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-game-accent;
+  }
+
+  .card {
+    @apply bg-game-secondary rounded-lg shadow-lg p-6;
+  }
+}
